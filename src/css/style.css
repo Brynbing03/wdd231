@@ -173,15 +173,22 @@ button#global-nav-toggle {
   color: white;
   padding: 1rem;
   width: 100%;
+  display: flex;             
+  align-items: baseline;     
+  gap: 0.5rem;
 }
+
 .park-info h1 {
   margin: 0;
   font-size: 2rem;
+  white-space: nowrap;       
 }
+
 .park-info p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
+
 
 /* park icons row */
 .park-header__icons {
