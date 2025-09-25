@@ -47,7 +47,7 @@ function parkIconsTemplate(park) {
     </a>
     <a href="${park.mapsUrl || '#'}" target="_blank" rel="noopener">
       <svg class="icon">
-        <use xlink:href="images/sprite.symbol.svg#map"></use>
+        <use xlink:href="images/sprite.symbol.svg#location"></use>
       </svg>
       <span>Maps</span>
     </a>
@@ -59,7 +59,7 @@ function parkIconsTemplate(park) {
     </a>
     <a href="${park.feesUrl || '#'}" target="_blank" rel="noopener">
       <svg class="icon">
-        <use xlink:href="images/sprite.symbol.svg#fees"></use>
+        <use xlink:href="images/sprite.symbol.svg#fee-22"></use>
       </svg>
       <span>Fees</span>
     </a>
