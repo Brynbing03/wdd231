@@ -52,9 +52,8 @@ function parkIconsTemplate(park) {
       <span>Calendar</span>
     </a>
     <a href="${park.feesUrl || '#'}" target="_blank" rel="noopener">
-      <svg class="icon">
-        <use xlink:href="images/sprite.symbol.svg#fees-22"></use>
-      </svg>
+      <svg class="icon">         <use xlink:href="images/sprite.symbol.svg#fee-22"></use>
+       </svg>
       <span>Fees</span>
     </a>
   `;
