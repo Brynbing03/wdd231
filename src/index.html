@@ -3,24 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yellowstone National Park</title>
+    <title>[Park Name]</title>
     <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="js/main.js"></script>
   </head>
   <body>
-    <!-- this is showing and informing who ever the user is that this is actually not a real website...  -->
     <p class="disclaimer">
       This is not a real NPS website. It is an educational exercise. If you
       landed here by accident, to find the real website visit
-      <!-- this is the link to the legit website -->
-      <a href="https://www.nps.gov/yell/index.htm">Yellowstone National Park</a>
+      <a href="parkUrl">[park name]</a>
     </p>
-
-    <!-- these are the skip to... links each of these lets who ever the user is be able to jump to key parts of the page -->
     <div class="skip-links" aria-label="short-cut links" role="navigation">
       <ul>
         <li>
-          <a href="#global-nav-toggle" aria-label="Skip to global NPS navigation"
+          <a
+            href="#global-nav-toggle"
+            aria-label="Skip to global NPS navigation"
             >Skip to global NPS navigation</a
           >
         </li>
@@ -35,88 +33,117 @@
           >
         </li>
         <li>
-          <a href="#park-footer" aria-label="Skip to this park information section"
+          <a
+            href="#park-footer"
+            aria-label="Skip to this park information section"
             >Skip to this park information section</a
           >
         </li>
       </ul>
     </div>
-
     <header>
-      <!-- this is the global header, it is the top bar of the site where the logo and site name link back to home -->
       <section class="global-header">
-        <a href="index.html" class="site-title">
-          <span class="logo" role="presentation"></span>
-          <span>National Park Service</span>
-        </a>
-        <!-- the search icon - svg pulled from the sprite sheet -->
+        <a href="index.html" class="site-title"
+          ><span class="logo" role="presentation"></span>
+          <span>National Park Service</span></a
+        >
         <div class="global-header__right">
           <a class="search-icon" href="#park-footer">
             <svg class="icon">
-              <use xlink:href="images/sprite.symbol.svg#search"></use>
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="/images/sprite.symbol.svg#search"
+              ></use>
             </svg>
             <span class="visually-hidden">Search</span>
           </a>
-          <!-- this is the button to be able to open and close the nav bar, boo yeah -->
           <button id="global-nav-toggle">
             <svg class="icon">
-              <use xlink:href="images/sprite.symbol.svg#menu"></use>
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="/images/sprite.symbol.svg#menu"
+              ></use>
             </svg>
             <span class="visually-hidden">Open</span> Menu
           </button>
         </div>
       </section>
-
-      <!-- alrighty, this is the park header, it displayes the park name and location -->
       <section id="park-header">
-        <div class="park-info">
-          <h1>Yellowstone</h1>
-          <p>National Park<br />ID, MT, WY</p>
+        <div class="hero-banner">
+          <img src="" alt="" />
+          <div class="hero-banner__content">
+            <!-- <a href="#" class="hero-banner__title">Yellowstone</a>
+            <p class="hero-banner__subtitle">
+              <span>National Park</span>
+              <span>ID, MT, WY</span>
+            </p> -->
+          </div>
         </div>
+        <nav class="park-nav">
+          <ul>
+            <li>
+              <a href="#">
+                <span>Info</span>
+                <svg class="icon" role="presentation" focusable="false">
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/images/sprite.symbol.svg#info"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Alerts</span>
+                <svg class="icon" role="presentation" focusable="false">
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/images/sprite.symbol.svg#alert"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Maps</span>
+                <svg class="icon" role="presentation" focusable="false">
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/images/sprite.symbol.svg#location"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Calendar</span>
+                <svg class="icon" role="presentation" focusable="false">
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/images/sprite.symbol.svg#calendar"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Fees</span>
+                <svg class="icon" role="presentation" focusable="false">
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/images/sprite.symbol.svg#fee-22"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </section>
-
-      <!-- da park icons row, these are like the quick links to the icons at the bottom -->
-      <div class="park-header__icons">
-        <a href="#">
-          <svg class="icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.symbol.svg#info"></use>
-          </svg>
-          <span>Info</span>
-        </a>
-        <a href="#">
-          <svg class="icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.symbol.svg#alert"></use>
-          </svg>
-          <span>Alerts</span>
-        </a>
-        <a href="#">
-          <svg class="icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.symbol.svg#location"></use>
-          </svg>
-          <span>Maps</span>
-        </a>
-        <a href="#">
-          <svg class="icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.symbol.svg#calendar"></use>
-          </svg>
-          <span>Calendar</span>
-        </a>
-        <a href="#">
-          <svg class="icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.symbol.svg#fees-22"></use>
-          </svg>
-          <span>Fees</span>
-        </a>
-      </div>
     </header>
-
-    <!-- this is where the main page content will go or be linked to with js -->
     <main id="main">
       <section class="intro"></section>
       <section class="info"></section>
     </main>
-
-    <!-- footer place holder -->
-    <footer id="park-footer"></footer>
+    <footer id="park-footer" class="park-footer"></footer>
   </body>
 </html>
