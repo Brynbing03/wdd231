@@ -1,0 +1,9 @@
+@import "css/partials/variables.css";
+@import "css/partials/global.css";
+@import "css/partials/header.css";
+@import "css/partials/footer.css";
+@import "css/partials/blocks.css";
+@import "css/partials/utilities.css";
+@import "css/home.css";
+
+/* do i need to oput the css in front or take it off? */
