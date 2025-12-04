@@ -1,0 +1,82 @@
+body {
+    font-family: Comic Sans MS, sans-serif;
+    background-color: rgb(228, 180, 133);
+    width: 1000px;
+    color: #9a1c1c;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  h1 {
+    color: rgb(85, 55, 55);
+    text-align: center;
+    font-size: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  
+  img {
+    width: 100%;
+    height: auto;
+    border: rgb(85, 55, 55) 10px solid;
+    border-radius: 50px;
+  }
+  
+  /* List styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+
+  form {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+  
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  
+    padding: 15px;
+    background-color: #fff;
+  
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  
+    position: relative;
+    top: -30px;   
+    z-index: 10;
+  }
+  
+  form input[type="text"] {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 2px solid #5dba56;
+    border-radius: 8px;
+  }
+  
+  form input[type="text"]:focus {
+    border-color: rgb(85, 55, 55);
+    box-shadow: 0 0 8px rgba(85, 55, 55, 0.3);
+  }
+  
+  form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(85, 55, 55);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: rgb(120, 80, 80);
+  }
+  
